@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dimas Fakhri BR — Portfolio</title>
+  <meta name="description" content="Portfolio of Dimas Fakhri Bahtiar Rifai — Digital Content Writer & Copywriter. CV, selected projects, skills and contact." />
+  <meta name="author" content="Dimas Fakhri Bahtiar Rifai" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dimas Fakhri BR — Digital Content Writer & Copywriter" />
+  <meta property="og:description" content="Portfolio of Dimas Fakhri — content/ copy for publishing and campaigns. Based in Bogor, Indonesia." />
+  <meta property="og:image" content="https://rawdeedigital.com/og-image.png" />
+  <meta property="og:url" content="https://rawdeedigital.com/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dimas F. B. Rifai — Portfolio" />
+  <meta name="twitter:description" content="Digital content writer & copywriter — CV, projects, contact." />
+
+  <!-- JSON-LD (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Dimas Fakhri Bahtiar Rifai",
+    "jobTitle":"Digital Content Writer & Copywriter",
+    "url":"https://rawdeedigital.com/",
+    "sameAs":[
+      "https://www.linkedin.com/in/dimas-fakhri-bahtiar-rifai-4a58b8212/"
+    ],
+    "email":"mailto:dimasfakhrioke@gmail.com",
+    "telephone":"+62895429299919",
+    "address": {
+      "@type":"PostalAddress",
+      "addressLocality":"Bogor",
+      "addressRegion":"West Java",
+      "addressCountry":"ID"
+    }
+  }
+  </script>
+
+  <!-- Styles (compact but readable) -->
+  <style>
+  :root{
+    --bg:#f7f7fa;--card:#fff;--muted:#6b7280;--text:#0f1724;--primary:#0b5cff;--accent:#0b7285;--radius:12px;--shadow:0 8px 30px rgba(11,20,40,0.06);--maxw:1100px;
+  }
+  *{box-sizing:border-box}body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
+  header{position:sticky;top:10px;background:rgba(255,255,255,0.7);backdrop-filter:blur(6px);padding:10px;border-radius:14px;display:flex;align-items:center;gap:12px;justify-content:space-between;box-shadow:var(--shadow);z-index:80}
+  .brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit}
+  .avatar{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+  nav ul{display:flex;gap:10px;list-style:none;margin:0;padding:0}
+  nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+  nav a.active, nav a:hover{background:var(--card);color:var(--text);box-shadow:var(--shadow)}
+  .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;margin-top:28px}
+  .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+  h1,h2,h3{margin:0}
+  h1{font-size:20px}
+  .role{color:var(--muted);font-size:14px}
+  .subtitle{color:var(--muted);margin-top:10px}
+  .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+  .btn.primary{background:var(--primary);color:#fff}
+  .btn.ghost{border:1px solid rgba(0,0,0,0.06);background:transparent;color:var(--text)}
+  .quick-links{margin-top:14px;color:var(--muted);font-size:14px}
+  .section{margin-top:28px}
+  .grid-2{display:grid;grid-template-columns:1fr 380px;gap:20px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+  .chip{background:rgba(11,20,40,0.04);padding:8px 10px;border-radius:999px;font-weight:700}
+  .timeline{display:flex;flex-direction:column;gap:12px}
+  .timeline-item{display:flex;gap:12px;align-items:flex-start}
+  .timeline-date{min-width:110px;font-weight:700;color:var(--primary)}
+  .skills-grid{display:flex;flex-wrap:wrap;gap:10px}
+  .skill{min-width:140px;background:linear-gradient(180deg,rgba(11,20,40,0.03),rgba(11,20,40,0.01));padding:12px;border-radius:8px}
+  .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .project-card{padding:12px;border-radius:12px;cursor:pointer}
+  .contact-grid{display:grid;grid-template-columns:1fr 420px;gap:12px}
+  form label{display:block;font-weight:700;margin-top:8px}
+  input,textarea{width:100%;padding:8px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);margin-top:6px}
+  footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+  /* reveal animation */
+  .reveal{opacity:0;transform:translateY(12px);transition:all .6s cubic-bezier(.2,.8,.2,1)}
+  .reveal.visible{opacity:1;transform:none}
+  /* responsive */
+  @media(max-width:980px){.hero{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.projects-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}nav ul{display:none}}
+  @media(max-width:640px){.projects-grid{grid-template-columns:1fr}}
+  /* subtle hover micro-interactions */
+  .project-card:hover{transform:translateY(-6px);transition:all .28s ease;box-shadow:0 18px 50px rgba(11,20,40,0.08)}
+  .card:hover{transform:translateY(-4px);transition:all .28s ease}
+  /* modal */
+  .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.45);z-index:120;padding:20px}
+  .modal.open{display:flex}
+  .modal-inner{max-width:760px;width:100%;background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+  /* theme (light/dark toggle via data-theme) */
+  :root[data-theme="dark"]{--bg:#071025;--card:#071726;--muted:#98a0b3;--text:#e6eef7;--primary:#6ea8ff;--accent:#4fd1c5;--shadow:0 12px 40px rgba(2,6,23,0.6)}
+  .top-actions{display:flex;gap:8px;align-items:center}
+  .small{font-size:13px;color:var(--muted)}
+  </style>
+
+  <!-- ========== Analytics snippet: GoatCounter by default ========== -->
+  <!-- Option A: GoatCounter (free & privacy-friendly) -->
+  <!-- Replace `GOATCOUNTER_SITE_ID` with your site slug, e.g. "dimas-portfolio" -->
+  <script>
+  (function() {
+    window.goatcounter = window.goatcounter || function() {(window.goatcounter.q = window.goatcounter.q || []).push(arguments)};
+    var g = document.createElement("script");
+    g.async = true;
+    g.src = "https://gc.zgo.at/count.js";
+    document.head.appendChild(g);
+    // initialize with your path if desired:
+    window.goatcounter({name: "GOATCOUNTER_SITE_ID"});
+  })();
+  </script>
+
+  <!-- Option B: Plausible -->
+  <!-- Comment out GoatCounter above and use the snippet below; set data-domain to your domain -->
+  <!--
+  <script async defer data-domain="PLAUSIBLE_DOMAIN" src="https://plausible.io/js/plausible.js"></script>
+  -->
+
+</head>
+<body>
+  <div class="wrap" id="wrap">
+    <header>
+      <a class="brand" href="#home">
+        <div class="avatar">DF</div>
+        <div>
+          <h1>Dimas Fakhri BR</h1>
+          <div class="role">Digital Content Writer & Copywriter</div>
+        </div>
+      </a>
+
+      <div style="display:flex;gap:10px;align-items:center">
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="top-actions">
+          <button id="theme-toggle" aria-pressed="false" title="Toggle theme">🌗</button>
+          <a class="btn primary" href="document\CURRICULUM VITAE.pdf" download>Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero reveal">
+        <div>
+          <h2>Hi! I'm <strong id="typed-name">Dimas Fakhri Bahtiar Rifai</strong></h2>
+          <p class="subtitle">Digital Content Writer & Copywriter. I craft persuasive copy, editorial content, and digital storytelling for brands, publishers, and advocacy campaigns.</p>
+          <div style="margin-top:12px">
+            <a class="btn primary" href="https://gravatar.com/dimasfakhribr">View Work</a>
+            <a class="btn ghost" href="mailto:dimasfakhrioke@gmail.com">Email</a>
+          </div>
+
+          <ul class="quick-links">
+            <li><strong>Location:</strong> Bogor, West Java, Indonesia</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dimas-fakhri-bahtiar-rifai-4a58b8212/" target="_blank">dimas-fakhri...</a></li>
+            <li><strong>Portfolio:</strong> <a href="https://gravatar.com/dimasfakhribr" target="_blank">gravatar</a></li>
+          </ul>
+        </div>
+
+        <aside class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3>Dimas Fakhri BR</h3>
+              <div class="small">Digital Content Writer & Copywriter</div>
+            </div>
+            <div style="text-align:right">
+              <div class="small">GPA</div>
+              <div style="font-weight:700">3.69</div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px" class="small">Available for hire and collaboration</div>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="btn" href="mailto:dimasfakhrioke@gmail.com">Email</a>
+            <a class="btn ghost" href="http://wa.me/+62895429299919" target="_blank">WhatsApp</a>
+          </div>
+        </aside>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section reveal">
+        <h2>About</h2>
+        <div class="grid-2">
+          <div class="card">
+            <p>I am a fresh graduate in Journalism (S1) with experience as a Content Writer/Copywriter at Rawdee Digital Agency, Remotivi, and Mizan Publishing, and as a Book Editor at Kompas Publishing. I specialize in promotional and editorial content, campaign materials, social performance monitoring, and reporting. Detail-oriented, strong in audience research, trend analysis, and both creative and academic writing.</p>
+
+            <div style="margin-top:12px">
+              <strong>Contact</strong>
+              <div class="small">Email: <a href="mailto:dimasfakhrioke@gmail.com">dimasfakhrioke@gmail.com</a></div>
+              <div class="small">Phone: +62 895 4292 99919</div>
+              <div class="small">Location: Bogor, Indonesia</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Core Competencies</h3>
+            <div class="chips" aria-hidden="true">
+              <span class="chip">Content Writing</span>
+              <span class="chip">Copywriting</span>
+              <span class="chip">SEO & Ahrefs</span>
+              <span class="chip">Social Strategy</span>
+              <span class="chip">Editing</span>
+              <span class="chip">WordPress</span>
+            </div>
+
+            <h3 style="margin-top:12px">Tools</h3>
+            <div class="small">Google Docs, Canva, Hootsuite, Meta Business Suite, Semrush, Yoast</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section reveal">
+        <h2>Experience</h2>
+        <div class="timeline" id="experience-list" aria-live="polite">
+          <!-- Filled by script -->
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section reveal">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section reveal">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Get in touch</h3>
+            <p>For freelance, product, or editorial work — say hello.</p>
+            <div class="small">Email: <a href="mailto:dimasfakhrioke@gmail.com">dimasfakhrioke@gmail.com</a></div>
+            <div class="small">WhatsApp: <a href="http://wa.me/+62895429299919">+62 895 4292 99919</a></div>
+            <div style="margin-top:8px">
+              <a class="btn primary" href="mailto:dimasfakhrioke@gmail.com?subject=Opportunity">Email me</a>
+              <a class="btn ghost" href="http://wa.me/+62895429299919">Message</a>
+            </div>
+          </div>
+
+          <!-- Contact form: supports Netlify Forms OR Formspree -->
+          <form id="contact-form" class="card" onsubmit="return handleContactSubmit(event)"
+            method="POST"
+            action="https://formspree.io/f/FORMSPREE_ENDPOINT" 
+            data-netlify="true"
+            name="contact"
+          >
+            <!-- For Formspree: set action to your Formspree endpoint and remove data-netlify attr
+                 For Netlify: keep data-netlify and ensure the site is deployed on Netlify -->
+            <input type="hidden" name="form-name" value="contact" />
+            <label for="name">Your name</label>
+            <input id="name" name="name" required>
+            <label for="email">Your email</label>
+            <input id="email" type="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button class="btn primary" type="submit">Send</button>
+              <button class="btn ghost" type="reset">Reset</button>
+            </div>
+            <p class="small muted">This form will open your email client fallback if JS mailto is used. Configure Formspree / Netlify for serverless handling.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="small">
+      © <span id="year"></span> Dimas Fakhri Bahtiar Rifai — Digital Content Writer & Copywriter · <a href="https://rawdeedigital.com/">rawdeedigital.com</a>
+    </footer>
+  </div>
+
+  <!-- Project modal -->
+  <div id="modal" class="modal" role="dialog" aria-hidden="true">
+    <div class="modal-inner card">
+      <button id="modal-close" style="float:right;border:none;background:none;font-size:20px">×</button>
+      <h3 id="modal-title">Project</h3>
+      <p id="modal-desc"></p>
+      <div id="modal-links"></div>
+    </div>
+  </div>
+
+  <!-- Scripts (all in one) -->
+  <script>
+  (function(){
+    // Data extracted from your CV
+    const DATA = {
+      name: "Dimas Fakhri Bahtiar Rifai",
+      role: "Digital Content Writer & Copywriter",
+      contact: { email:"dimasfakhrioke@gmail.com", phone:"+62895429299919", linkedin:"https://www.linkedin.com/in/dimas-fakhri-bahtiar-rifai-4a58b8212/", portfolio:"https://rawdeedigital.com/" },
+      experience: [
+        { role:"Copywriter & Social Media Specialist (Contract)", org:"Rawdee Digital Agency", location:"Bintaro", period:"April 2025 - Present", bullets:["Produce ad copy, captions, and video scripts.","Design social calendars and run routine posting & engagement.","Monitor content performance and translate insights into strategy."]},
+        { role:"Book Copy Editor (Freelancer)", org:"Penerbit Buku Kompas", location:"Jakarta", period:"Sep 2023 - Dec 2023", bullets:["Proofread and edited manuscripts for grammar, punctuation, and consistency.","Collaborated with authors and designers."]},
+        { role:"Content Writer / Copywriter (Freelancer)", org:"Penerbit Mizan", location:"Bandung", period:"Jul 2022 - Feb 2023", bullets:["Wrote book reviews, ad-copy and sales letters."]},
+        { role:"Copywriter (Intern)", org:"Echolab Remotivi", location:"Jakarta", period:"Oct 2024 - Feb 2025", bullets:["Ideated campaign copy for NGO SAFEnet.","Produced captions and campaign pillars for advocacy."]}
+      ],
+      skills:[
+        {name:"Content Writing",level:"Expert"},{name:"Copywriting",level:"Expert"},{name:"SEO & Ahrefs",level:"Advanced"},
+        {name:"Editing & Proofreading",level:"Advanced"},{name:"Social Media Strategy",level:"Advanced"},{name:"WordPress",level:"Intermediate"}
+      ],
+      projects:[
+        {id:"proj-safenet",title:"SAFEnet Campaign Content",desc:"Campaign content and social strategy for SAFEnet focused on platform accountability.",meta:"Captions, scripts, calendar"},
+        {id:"proj-mizan",title:"Mizan Marketing Content",desc:"Book reviews, ad-copy and short video scripts.",meta:"Freelance (2022-2023)"},
+        {id:"proj-kompas",title:"Kompas Book Editing",desc:"Proofreading and editorial corrections for titles.",meta:"Freelance (2023)"}
+      ]
+    };
+
+    // Populate experience
+    const expEl = document.getElementById("experience-list");
+    DATA.experience.forEach(it=>{
+      const a = document.createElement("article");
+      a.className = "timeline-item card";
+      a.innerHTML = '<div class="timeline-date">'+escapeHtml(it.period)+'</div><div><h4>'+escapeHtml(it.role)+'</h4><div class="small muted">'+escapeHtml(it.org)+' · '+escapeHtml(it.location)+'</div><p style="margin-top:8px">'+it.bullets.map(b=>escapeHtml(b)).join("<br>")+'</p></div>';
+      expEl.appendChild(a);
+    });
+
+    // Skills
+    const skillsEl = document.getElementById("skills-grid");
+    DATA.skills.forEach(s=>{
+      const d = document.createElement("div");
+      d.className = "skill card";
+      d.innerHTML = '<div style="font-weight:700">'+escapeHtml(s.name)+'</div><div class="small muted">'+escapeHtml(s.level)+'</div>';
+      skillsEl.appendChild(d);
+    });
+
+    // Projects
+    const projEl = document.getElementById("projects-grid");
+    DATA.projects.forEach(p=>{
+      const c = document.createElement("div");
+      c.className = "project-card card";
+      c.tabIndex = 0;
+      c.dataset.id = p.id;
+      c.innerHTML = '<h4>'+escapeHtml(p.title)+'</h4><div class="small muted">'+escapeHtml(p.meta)+'</div>';
+      c.addEventListener("click", ()=> openModal(p));
+      c.addEventListener("keypress", (e)=>{ if(e.key==="Enter") openModal(p); });
+      projEl.appendChild(c);
+    });
+
+    // Modal
+    const modal = document.getElementById("modal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDesc = document.getElementById("modal-desc");
+    const modalLinks = document.getElementById("modal-links");
+    document.getElementById("modal-close").addEventListener("click", closeModal);
+    modal.addEventListener("click", (e)=>{ if(e.target===modal) closeModal(); });
+    document.addEventListener("keydown", (e)=>{ if(e.key==="Escape") closeModal(); });
+
+    function openModal(p){
+      modalTitle.textContent = p.title;
+      modalDesc.textContent = p.desc;
+      modalLinks.innerHTML = '';
+      if(p.links) p.links.forEach(l => {
+        const a = document.createElement("a"); a.href = l.url; a.textContent = l.label; a.className="btn";
+        modalLinks.appendChild(a);
+      });
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden","false");
+      document.body.style.overflow = "hidden";
+    }
+    function closeModal(){
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden","true");
+      document.body.style.overflow = "";
+    }
+
+    // typed name (small effect)
+    const typed = document.getElementById("typed-name");
+    typed.textContent = "";
+    let idx = 0;
+    const name = DATA.name;
+    const t = setInterval(()=>{ typed.textContent += name[idx++]||""; if(idx>name.length) clearInterval(t); },18);
+
+    // reveal on scroll
+    const reveals = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver(entries=>{ entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add("visible"); }); },{threshold:0.12});
+    reveals.forEach(r=>io.observe(r));
+
+    // nav scrollspy + smooth scroll
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(a=> a.addEventListener("click", (e)=>{ e.preventDefault(); document.querySelector(a.getAttribute("href")).scrollIntoView({behavior:"smooth"}); }));
+    const sections = document.querySelectorAll("main section[id]");
+    window.addEventListener("scroll", throttle(scrollSpy,150));
+    function scrollSpy(){
+      const y = window.scrollY + 120;
+      let cur = sections[0].id;
+      sections.forEach(s=>{ if(s.offsetTop <= y) cur = s.id; });
+      navLinks.forEach(a=> a.classList.toggle("active", a.getAttribute("href") === '#'+cur));
+    }
+    scrollSpy();
+
+    // theme toggle
+    const themeBtn = document.getElementById("theme-toggle");
+    const root = document.documentElement;
+    const saved = localStorage.getItem("theme") || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark":"light");
+    setTheme(saved);
+    themeBtn.addEventListener("click", ()=> setTheme(root.getAttribute("data-theme")==="dark" ? "light":"dark"));
+    function setTheme(t){ root.setAttribute("data-theme", t); localStorage.setItem("theme", t); themeBtn.setAttribute("aria-pressed", t==="dark"); }
+
+    // contact form handler: fallback to mailto if needed
+    window.handleContactSubmit = function(e){
+      e.preventDefault();
+      const f = e.target;
+      // If using native submission to Formspree/Netlify, let it submit:
+      const useJSmailto = false; // set to true to force mailto fallback
+      if(useJSmailto){
+        const name = f.name.value; const email = f.email.value; const message = f.message.value;
+        const subject = encodeURIComponent("Portfolio enquiry from "+name);
+        const body = encodeURIComponent("Name: "+name+"%0AEmail: "+email+"%0A%0A"+message);
+        window.location.href = `mailto:${DATA.contact.email}?subject=${subject}&body=${body}`;
+        return false;
+      }
+      // Otherwise submit form normally (Formspree / Netlify will accept)
+      // For Formspree: action attribute points to https://formspree.io/f/your-id
+      return true;
+    };
+
+    // helpers
+    function throttle(fn, wait){ let t=Date.now(); return function(){ if(Date.now()-t > wait){ fn(); t=Date.now(); } } }
+    function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[c])); }
+
+    // set year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+  })();
+  </script>
+
+  <!-- ========== End single-file ========== -->
+</body>
+</html>
